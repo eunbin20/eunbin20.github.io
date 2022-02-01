@@ -226,6 +226,7 @@
 // List of posts
 .post-item {
   display: flex;
+  flex-direction: column;
   padding-top: 5px;
   padding-bottom: 6px;
   @extend %clearfix;
@@ -252,6 +253,7 @@
     font-size: $base-font-size;
     font-weight: normal;
     letter-spacing: 0.1px;
+    position: relative;
 
     a {
       color: $text-base-color;
@@ -261,6 +263,25 @@
         color: $black;
       }
     }
+
+    span {
+      display: inline-block;
+      position: absolute;
+      width: 68px;
+      white-space: nowrap;
+      right: 0px;
+    }
+  }
+
+  .date {
+    display: flex;
+    align-items: center;
+  }
+
+  .date-item {
+    font-size: 10pt;
+    margin: 0 2px 0 0;
+    color: $gray;
   }
 }
 
@@ -325,7 +346,6 @@
     color: $text-link-blue-active;
   }
 }
-
 
 .search-article {
   position: relative;
