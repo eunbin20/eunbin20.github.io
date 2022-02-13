@@ -6,7 +6,7 @@ excerpt: Hello peeps, I'm student of computer science from Banyuwangi, living in
 comments: true
 ---
 
-사용자가 더 오래 머무르고싶어하는 웹페이지를 만들고 싶습니다.
+자동화
 
 현재 띵스플로우에서 웹 프론트엔드 개발자로 일하고 있습니다.
 
