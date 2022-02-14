@@ -12,9 +12,8 @@ mode: dark # default theme "dark" | "light"
 author:
   name: Eunbin Kim # author name
   bio: >- # tell to the world
-    주니어 웹 프론트엔드 개발자 김은빈입니다. <br/>
-    <a href="https://github.com/eunbin20" target="_blank" rel="noopener">@github</a>
-    <a href="https://github.com/eunbin20" target="_blank" rel="noopener">@linkedin</a>
+    Eunbin's Engineering Blog🚀 <br/>
+    #javascript #react #graphql #books #review
   username: eunbin # general username
   github: eunbin20 # github username
   email: eunbink98@email.com # email adress

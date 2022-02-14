@@ -181,7 +181,7 @@
 
 // Author
 .author {
-  margin-top: 6.3rem;
+  margin-top: 5.3rem;
   margin-bottom: 7.3rem;
   text-align: center;
 
@@ -190,8 +190,8 @@
   }
 
   .author-avatar {
-    width: 100px;
-    height: 100px;
+    width: 130px;
+    height: 130px;
     border-radius: 100%;
     user-select: none;
     background-color: $black;
@@ -203,7 +203,8 @@
   }
 
   .author-name {
-    font-size: 1.7em;
+    display: inline-block;
+    font-size: 1.4em;
     margin-bottom: 2px;
   }
 
