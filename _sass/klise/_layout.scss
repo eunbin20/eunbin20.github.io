@@ -116,14 +116,14 @@
     border-bottom: 1px solid $light;
 
     a#mode {
-      left: 10px;
+      left: -8px;
       top: 12px;
     }
 
     .menu-icon {
       display: block;
       position: absolute;
-      right: 0;
+      left: 0;
       width: 50px;
       height: 23px;
       line-height: 0;
