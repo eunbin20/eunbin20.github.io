@@ -80,9 +80,6 @@ layout: compress
 
     </main>
 
-    {% if page.modified %}
-      <small class="post-updated-at">updated_at {{page.modified | date: "%d-%m-%Y"}}</small>
-    {% endif %}
     {% if page.next or page.previous %}
       {% include navigation.html %}
     {% endif %}
