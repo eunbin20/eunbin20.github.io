@@ -6,7 +6,7 @@ lang: ko-KO # default lang
 timezone: Asia/Seoul # set your timezone
 image: assets/img/profile.jpg # This image used for Open Graph more info https://ogp.me/
 repo: https://github.com/eunbin20/eunbin20.github.io # site repo [optional]
-mode: light # default theme "dark" | "light"
+mode: dark # default theme "dark" | "light"
 
 # Profile settings
 author:
@@ -16,7 +16,7 @@ author:
     #Typescript #React #GraphQL #Books #Review
   username: eunbin # general username
   github: eunbin20 # github username
-  email: eunbink98@email.com # email adress
+  email: eunbink98@email.com # email address
   avatar: /assets/img/profile.jpg # change with your own avatar
 
 # URL settings
