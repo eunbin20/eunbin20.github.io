@@ -1,6 +1,8 @@
 // Fonts preferences
-$sans-family: Roboto, sans-serif;
-$mono-family: Consolas, monospace;
+$sans-family: AppleSDGothicNeo, apple-system, BlinkMacSystemFont, Helvetica,
+  Arial, Noto Sans, Dotum, sans-serif !important;
+$mono-family: AppleSDGothicNeo, apple-system, BlinkMacSystemFont, Helvetica,
+  Arial, Noto Sans, Dotum, sans-serif !important;
 $base-font-size: 18px;
 $medium-font-size: $base-font-size * 0.938;
 $small-font-size: $base-font-size * 0.875;
@@ -14,8 +16,8 @@ $bold-weight: 700;
 
 //Light Colors
 $text-base-color: #434648;
-$text-link-blue: #003fff;
-$text-link-blue-active: #0036c7;
+$text-link-blue: #ff5277;
+$text-link-blue-active: #ff5277;
 
 $black: #0d122b;
 $light: #ececec;
