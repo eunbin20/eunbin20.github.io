@@ -14,4 +14,4 @@ comments: false
 
 - {{ site.author.email }}
 - github.com/{{ site.author.github }}
-- [linkedIn]("https://www.linkedin.com/in/eunbin-kim-b1584822b")
+- [linkedIn](https://www.linkedin.com/in/eunbin-kim-b1584822b)
