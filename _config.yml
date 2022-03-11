@@ -6,7 +6,7 @@ lang: ko-KO # default lang
 timezone: Asia/Seoul # set your timezone
 image: assets/img/profile.jpg # This image used for Open Graph more info https://ogp.me/
 repo: https://github.com/eunbin20/eunbin20.github.io # site repo [optional]
-mode: dark # default theme "dark" | "light"
+mode: "dark" # default theme "dark" | "light"
 
 # Profile settings
 author:
