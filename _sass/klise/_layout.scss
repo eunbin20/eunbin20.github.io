@@ -348,6 +348,7 @@
         font-weight: normal;
         letter-spacing: 0.1px;
         line-height: 25px;
+        color: $text-base-color;
 
         a {
           color: $text-base-color;
@@ -364,6 +365,10 @@
           width: 68px;
           white-space: nowrap;
           right: 0px;
+        }
+        &:hover,
+        &focus {
+          color: $black;
         }
       }
 
@@ -410,9 +415,13 @@
 
   &:hover,
   &focus {
-    .post-title {
-      color: $black;
-      transition: all ease 0.15s 0s;
+    .post-content-wrapper {
+      .post-content {
+        .post-title {
+          color: $black;
+          // transition: all ease 0.15s 0s;
+        }
+      }
     }
   }
 }
