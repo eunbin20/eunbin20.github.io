@@ -225,8 +225,6 @@
   color: $black;
 }
 
-// List of posts in Home
-
 // List of posts
 .post-item {
   display: flex;
@@ -293,6 +291,7 @@
   }
 }
 
+// List of posts in Home
 .post-item.home {
   display: flex;
   flex-direction: column;
@@ -409,9 +408,10 @@
     }
   }
 
-  &:hover {
+  &:hover,
+  &focus {
     .post-title {
-      color: #ff5277;
+      color: $black;
       transition: all ease 0.15s 0s;
     }
   }
