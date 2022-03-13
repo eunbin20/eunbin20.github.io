@@ -227,6 +227,72 @@
 
 // List of posts in Home
 
+// List of posts
+.post-item {
+  display: flex;
+  flex-direction: column;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  @extend %clearfix;
+
+  &:not(:first-child) {
+    border-top: 1px solid $light;
+  }
+
+  .post-item-date {
+    min-width: 96px;
+    color: $black;
+    font-weight: 700;
+    padding-right: 10px;
+
+    @include media-query($on-mobile) {
+      font-size: 16px;
+    }
+  }
+
+  .post-item-title {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    font-size: $base-font-size;
+    font-weight: normal;
+    letter-spacing: 0.1px;
+    position: relative;
+
+    a {
+      color: $text-base-color;
+
+      &:hover,
+      &focus {
+        color: $black;
+      }
+    }
+
+    span {
+      display: inline-block;
+      position: absolute;
+      width: 68px;
+      white-space: nowrap;
+      right: 0px;
+    }
+  }
+
+  .date {
+    display: flex;
+    align-items: center;
+  }
+
+  .date-item {
+    font-size: 10pt;
+    margin: 0 0 0 6px;
+    color: $gray;
+  }
+
+  .tag.date-item {
+    letter-spacing: 0.03rem;
+  }
+}
+
 .post-item.home {
   display: flex;
   flex-direction: column;
@@ -348,72 +414,6 @@
       color: #ff5277;
       transition: all ease 0.15s 0s;
     }
-  }
-}
-
-// List of posts
-.post-item {
-  display: flex;
-  flex-direction: column;
-  padding-top: 5px;
-  padding-bottom: 6px;
-  @extend %clearfix;
-
-  &:not(:first-child) {
-    border-top: 1px solid $light;
-  }
-
-  .post-item-date {
-    min-width: 96px;
-    color: $black;
-    font-weight: 700;
-    padding-right: 10px;
-
-    @include media-query($on-mobile) {
-      font-size: 16px;
-    }
-  }
-
-  .post-item-title {
-    margin: 0;
-    border: 0;
-    padding: 0;
-    font-size: $base-font-size;
-    font-weight: normal;
-    letter-spacing: 0.1px;
-    position: relative;
-
-    a {
-      color: $text-base-color;
-
-      &:hover,
-      &focus {
-        color: $black;
-      }
-    }
-
-    span {
-      display: inline-block;
-      position: absolute;
-      width: 68px;
-      white-space: nowrap;
-      right: 0px;
-    }
-  }
-
-  .date {
-    display: flex;
-    align-items: center;
-  }
-
-  .date-item {
-    font-size: 10pt;
-    margin: 0 0 0 6px;
-    color: $gray;
-  }
-
-  .tag.date-item {
-    letter-spacing: 0.03rem;
   }
 }
 
