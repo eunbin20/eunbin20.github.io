@@ -280,3 +280,13 @@
     </div>
   </nav>
 </div>
+<script>
+  const menus = document.querySelectorAll(".menu-link");
+
+  console.log(menus);
+  menus.forEach((menu) => {
+    menu.addEventListener("click", (e) => {
+      console.log(e.target);
+    });
+  });
+</script>

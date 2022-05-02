@@ -258,6 +258,7 @@ blockquote {
   margin-left: 10px;
   margin-right: 10px;
   font-size: 0.9em;
+  background: $light-gray;
 
   > :last-child {
     margin-bottom: 0;
@@ -344,7 +345,7 @@ table {
 // When mouse block a text set this color
 mark,
 ::selection {
-  background: #fffba0;
+  background: #fcf9bdeb;
   color: $black;
 }
 

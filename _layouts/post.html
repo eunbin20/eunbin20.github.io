@@ -26,6 +26,7 @@ layout: compress
     initTheme(localStorage.getItem("theme"));
     
     setTimeout(() => body.classList.remove("notransition"), 75);
+    fbq("trackCustom", "viewPost", { name: page.title });
   </script>
 
   {% include navbar.html %}

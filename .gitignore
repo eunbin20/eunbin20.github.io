@@ -4,4 +4,6 @@ _site/
 .jekyll-metadata
 _drafts
 klise-*.gem
-Gemfile.lock
+Gemfile.
+# Ignore application configuration
+/config/application.yml

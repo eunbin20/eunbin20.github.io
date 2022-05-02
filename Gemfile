@@ -32,3 +32,4 @@ end
 
 gem "webrick", "~> 1.7"
 gem "font-awesome-rails"
+gem "figaro"

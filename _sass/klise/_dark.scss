@@ -110,7 +110,8 @@ body[data-theme="dark"] {
 
   // Blockquote
   blockquote {
-    color: $dark-gray;
+    background: $dark-light-gray;
+    color: $dark-white;
     border-color: $dark-light;
   }
 
