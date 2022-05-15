@@ -2,19 +2,10 @@
 title: NextJS란? NextJS을 사용해야하는 이유
 date: 2022-05-02 11:58:47 +09:00
 modified: 2022-05-02 11:58:47 +09:00
-tags: [nextjs]
-description: 본격 NextJS 영업하는 글. Next 왜 안써??!!~~ framework와 library의 차이점과 SSR, file-based routing 등 nextjs의 특징 알아보기.
+tags: [nextjs, ssr]
+description: Framework와 Library의 차이점과 SSR, file-based routing 등 특징들을 통해 NextJS에 대해 알아보자.
 image: https://user-images.githubusercontent.com/43979066/166263265-83dec7cf-5cd8-4fc9-8224-e2c380f85c83.png
 ---
-
-- [Framework vs library](#framework-vs-library)
-    - [_예제) URL 라우팅_](#예제-url-라우팅)
-      - [next.js](#nextjs)
-      - [react](#react)
-- [Next.js란](#nextjs란)
-- [왜 사용하는가](#왜-사용하는가)
-    - [Next.js의 장점](#nextjs의-장점)
-- [_Resources_](#resources)
 
 > Next.js는 SPA인 리액트의 강점을 살리면서 **SSR**를 쉽게 구현하도록 최적화되어있는 프레임워크이다.<br/>
 > 또한 <mark>파일 기반의 자동 라우팅 기능 제공, 자동 코드 스플리팅 기능을 제공하는 등 개발자 경험</mark>을 높일 수 있다.<br/> <mark>SSR을 통해 SEO 성능을 높일 수 있고</mark>, 이는 직접적으로 사용자의 유입을 증대시킬 수 있어 마케팅적인 측면에서 유리하다. <br/><br/>마케팅을 위한 비용을 따로 들이지 않고도 기술 스택을 선택하는 것만으로도 사용자의 유입을 늘릴 수 있다는 점에서 매력적인 기술이라고 생각한다. 이러한 이유로 최근 많은 기업에서 next.js를 채택하여 사용하고 있다.
@@ -96,10 +87,9 @@ react-router-dom 패키지를 다운<br/>
 
 <br/>
 
-> 나의 결론은 "안 쓸 이유가 없다" 이다. Vercel을 이용하면 배포도 쉽다. <br/>
-> react와 문법이 거의 동일하기 때문에 react에 익숙한 개발자라면 러닝커브도 높지 않다.<br/>
-> 다만 SSR이나 next/image 등 NextJS에서 제공하는 기능을 잘 사용하기 위해서는 쪼끔 공부 해야한다.😉 <br/>
-> 아무튼 나는 NextJS를 강추한다!👏👏
+> react를 이용해 B2C 모델의 서비스를 제공하는 웹 어플리케이션이라면 Next를 강추하고싶다.<br/>
+> Vercel을 이용하면 배포도 쉽고, react와 문법이 거의 동일하기 때문에 react에 익숙한 개발자라면 러닝커브도 높지 않다.<br/>
+> 다만 SSR이나 next/image 등 NextJS에서 제공하는 기능을 "잘" 사용하기 위해서는 쪼끔 공부 해야한다.😉 <br/>
 
 <br/>
 

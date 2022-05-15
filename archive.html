@@ -38,25 +38,38 @@ comments: false
 
 <ul id="search-results"></ul>
 
-{%- for post in site.posts -%} {%- capture current_year -%}{{ post.date | date:
-"%Y" }}{%- endcapture -%} {%- unless current_year == previous_year -%}
-<h2>{{ current_year }}</h2>
+{%- for post in site.posts limit: site.number_of_posts -%} {%- capture
+current_year -%}{{ post.date | date: "%Y-%m" }}{%- endcapture -%} {%- unless
+current_year == previous_year -%}
+<h2 class="year">{{ current_year }}</h2>
 {%- assign previous_year = current_year -%} {%- endunless -%}
-<article class="post-item">
-  <h3 class="post-item-title">
-    <a href="{{ post.url }}">{{ post.title | escape }}</a>
-  </h3>
-  <div class="date">
-    <i class="fa fa-calendar fa-xs date-item"></i>
-    <p class="date-item">{{ post.date | date: "%Y-%m-%d" }}</p>
-    {%- if post.tags.length != 0 -%}
-    <i class="fas fa-tag fa-xs date-item"></i>
-    {%- endif -%} {%- for tag in post.tags -%}
-    <a class="tag date-item" href="/tags/#{{tag | downcase | slugify}}"
-      >#{{ tag }}{% unless forloop.last %},{% endunless %}</a
-    >
-    {%- endfor-%}
-  </div>
-</article>
-
-{%- endfor -%}
+<a href="{{ post.url }}">
+  <article
+    class="post-item home animation_up"
+    style="animation: animation_up {{ forloop.index | times: 0.2 }}s;"
+  >
+    <div class="post-content-wrapper">
+      <div class="post-content">
+        <h4 class="post-title">{{ post.title | escape }} {{ site.index }}</h4>
+        <p class="post-desc">{{ post.description }}</p>
+        <div class="tag-date">
+          {%- if post.tags.length != 0 -%}
+          <div class="tag-wrapper">
+            <i class="fas fa-tag fa-xs tag-icon icon"></i>
+            {%- endif -%} {%- for tag in post.tags -%}
+            <a class="post-tags" href="/tags/#{{tag | downcase | slugify}}"
+              >#{{ tag }}{% unless forloop.last %},{% endunless %}
+            </a>
+            {%- endfor-%}
+          </div>
+          <div class="date-wrapper">
+            <i class="fa fa-calendar fa-xs date-icon icon"></i>
+            <p class="date-item">{{ post.date | date: "%Y-%m-%d" }}</p>
+          </div>
+        </div>
+      </div>
+      <img class="post-image" src="{{ post.image }}" />
+    </div>
+  </article>
+</a>
+{%- endfor-%}

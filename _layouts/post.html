@@ -34,14 +34,14 @@ layout: compress
     <main class="page-content" aria-label="Content">
       <article itemscope itemtype="https://schema.org/BlogPosting">
 
-        <header class="header">
+        <header class="header post">
           {% if page.tags and page.tags != empty %}
           <div class="tags">
             {% assign tags = page.tags %}
             <span itemprop="keywords">
               {% for tag in tags %}
               <a class="tag"
-                href="/tags/#{{tag | downcase | slugify}}">{{tag | upcase }}</a>{% unless forloop.last %},{% endunless %}
+                href="/tags/#{{tag | downcase | slugify}}">#{{tag}}</a>{% unless forloop.last %}{% endunless %}
               {% endfor %}
             </span>
           </div>

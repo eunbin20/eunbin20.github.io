@@ -1,5 +1,5 @@
 ---
-title: 안녕하세요, 김은빈입니다🐯
+title: About Me
 permalink: /about/
 layout: page
 excerpt:

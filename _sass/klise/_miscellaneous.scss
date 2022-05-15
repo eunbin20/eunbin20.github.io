@@ -1,7 +1,7 @@
 // Animation fade-in
 @keyframes fadein {
   0% {
-    opacity: 0.2;
+    opacity: 0.6;
   }
 
   100% {
@@ -20,6 +20,15 @@
   }
 }
 
+@keyframes animation_up {
+  0% {
+    transform: translate(0, 30px);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}
 // Responsive embed video
 .embed-responsive {
   height: 0;

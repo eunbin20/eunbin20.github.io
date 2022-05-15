@@ -1,8 +1,8 @@
 // Fonts preferences
-$sans-family: AppleSDGothicNeo, apple-system, BlinkMacSystemFont, Helvetica,
-  Arial, Noto Sans, Dotum, sans-serif !important;
-$mono-family: AppleSDGothicNeo, apple-system, BlinkMacSystemFont, Helvetica,
-  Arial, Noto Sans, Dotum, sans-serif !important;
+$sans-family: Nanum Gothic AppleSDGothicNeo, apple-system, BlinkMacSystemFont,
+  Helvetica, Arial, Noto Sans, Dotum, sans-serif !important;
+$mono-family: Nanum Gothic AppleSDGothicNeo, apple-system, BlinkMacSystemFont,
+  Helvetica, Arial, Noto Sans, Dotum, sans-serif !important;
 $base-font-size: 18px;
 $medium-font-size: $base-font-size * 0.938;
 $small-font-size: $base-font-size * 0.875;
@@ -27,11 +27,11 @@ $light-gray: rgb(239, 239, 239);
 $white: #fff;
 
 // Dark Colors
-$dark-text-base-color: #c7bebe;
+$dark-text-base-color: #d6d6d6;
 $dark-text-link-blue: #ff5277;
 $dark-text-link-blue-active: #ff2957;
 
-$dark-black: #131418;
+$dark-black: #2e3032;
 $dark-white: #eaeaea;
 $dark-light: #1b1d25;
 $dark-smoke: #4a4d56;

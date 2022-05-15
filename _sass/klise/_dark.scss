@@ -110,11 +110,17 @@ body[data-theme="dark"] {
 
   // Blockquote
   blockquote {
-    background: $dark-light-gray;
-    color: $dark-white;
-    border-color: $dark-light;
+    background: #a4a4a4;
+    border-left: 5px solid rgb(152, 152, 152);
+    margin: 1.5em 10px;
+    padding: 0.5em 10px;
+    quotes: "\201C""\201D""\2018""\2019";
+    color: rgb(55, 55, 55);
   }
 
+  blockquote p {
+    display: inline;
+  }
   // Strong, Bold
   strong,
   b {

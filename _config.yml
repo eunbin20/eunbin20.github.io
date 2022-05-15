@@ -1,5 +1,5 @@
 # Site settings
-title: Eunbin's Devlog # site title
+title: eunbin.devlog # site title
 description: >- # site description
   web technology and experience as a journal
 lang: ko-KO # default lang
@@ -10,7 +10,7 @@ mode: light # default theme "dark" | "light"
 
 # Profile settings
 author:
-  name: Eunbin Kim # author name
+  name: eunbin20 # author name
   bio: >- # tell to the world
     Eunbin's Engineering Blog🚀 <br/>
     #Typescript #React #GraphQL #Books #Review
