@@ -3,7 +3,7 @@ title: NextJS란? NextJS을 사용해야하는 이유
 date: 2022-05-02 11:58:47 +09:00
 modified: 2022-05-02 11:58:47 +09:00
 tags: [nextjs, ssr]
-description: Framework와 Library의 차이점과 SSR, file-based routing 등 특징들을 통해 NextJS에 대해 알아보자.
+description: NextJS짱짱맨!!!
 image: https://user-images.githubusercontent.com/43979066/166263265-83dec7cf-5cd8-4fc9-8224-e2c380f85c83.png
 ---
 
