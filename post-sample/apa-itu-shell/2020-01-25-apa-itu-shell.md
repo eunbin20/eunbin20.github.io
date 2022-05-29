@@ -11,7 +11,8 @@ image: "/apa-itu-shell/shell_evolution.png"
 
 <figure>
 <img src="/apa-itu-shell/terminal_nginx.gif" alt="installing nginx in ubuntu">
-<figcaption>Fig 1. Terminal emulator, instalasi package dan check service.</figcaption>
+<figcaption>Fig 1. Terminal emulator, instalasi package d
+an check service.</figcaption>
 </figure>
 
 Jika kamu pernah menggunakan unix/linux mungkin pernah menggunakan program diatas, bahkan mungkin setiap hari menggunakannya untuk mengeksekusi suatu perintah melalui <a href="http://en.wikipedia.org/wiki/List_of_terminal_emulators" target="_blank" rel="noopener">terminal emulator</a>.
