@@ -38,4 +38,8 @@ image:
   <figcaption></figcaption>
 </figure>
 
+```jsx
+
+```
+
 # _Resources_
