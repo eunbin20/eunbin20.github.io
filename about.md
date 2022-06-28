@@ -14,6 +14,6 @@ comments: false
 
 **contact me ✨**
 
-- {{ site.author.email }}
-- github.com/{{ site.author.github }}
+- [eunbink98@gmail.com](eunbink98@gmail.com)
+- [github.com/eunbin20](https://github.com/eunbin20)
 - [linkedIn](https://www.linkedin.com/in/eunbin-kim-b1584822b)
