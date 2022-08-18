@@ -25,74 +25,24 @@
       src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"
     ></script>
     <script>
-      googletag = window.googletag || { cmd: [] };
-
-      var rewardedSlot;
+      window.googletag = window.googletag || { cmd: [] };
       googletag.cmd.push(function () {
-        rewardedSlot = googletag.defineOutOfPageSlot(
-          "/22639388115/rewarded_web_example",
-          googletag.enums.OutOfPageFormat.REWARDED
-        );
-
-        // Slot returns null if the page or device does not support rewarded ads.
-        if (rewardedSlot) {
-          rewardedSlot.addService(googletag.pubads());
-
-          googletag
-            .pubads()
-            .addEventListener("rewardedSlotReady", function (event) {
-              document.getElementById("watchAdButton").onclick = function () {
-                event.makeRewardedVisible();
-                displayModal();
-              };
-
-              displayModal(
-                "reward",
-                "Watch an ad to receive a special reward?"
-              );
-            });
-
-          googletag
-            .pubads()
-            .addEventListener("rewardedSlotClosed", dismissRewardedAd);
-
-          googletag
-            .pubads()
-            .addEventListener("rewardedSlotGranted", function (event) {
-              // Automatically close the ad by destroying the slot.
-              // Remove this to force the user to close the ad themselves.
-              dismissRewardedAd();
-
-              var reward = event.payload;
-              displayModal(
-                "grant",
-                "You have been rewarded " +
-                  reward.amount +
-                  " " +
-                  reward.type +
-                  "!"
-              );
-            });
-
-          googletag.enableServices();
-          googletag.display(rewardedSlot);
-        }
+        googletag
+          .defineSlot(
+            "/22802458718/start_chapter_reward/web_start_chapter_reward",
+            [
+              [320, 480],
+              [768, 1024],
+            ],
+            "div-gpt-ad-1660639068844-0"
+          )
+          .addService(googletag.companionAds())
+          .addService(googletag.pubads());
+        googletag.pubads().enableSingleRequest();
+        googletag.pubads().enableVideoAds();
+        googletag.companionAds().setRefreshUnfilledSlots(true);
+        googletag.enableServices();
       });
-
-      function dismissRewardedAd() {
-        displayModal();
-        googletag.destroySlots([rewardedSlot]);
-      }
-
-      function displayModal(type, message) {
-        var modal = document.getElementById("modal");
-        modal.removeAttribute("data-type");
-
-        if (type) {
-          document.getElementById("modalMessage").textContent = message;
-          modal.setAttribute("data-type", type);
-        }
-      }
     </script>
     <style>
       .modal {
@@ -143,19 +93,16 @@
     </style>
   </head>
   <body>
-    <div id="modal" class="modal">
-      <div class="modalDialog">
-        <p id="modalMessage"></p>
-
-        <span class="grantButtons">
-          <input type="button" onclick="dismissRewardedAd();" value="Close" />
-        </span>
-
-        <span class="rewardButtons">
-          <input type="button" id="watchAdButton" value="Yes" />
-          <input type="button" onclick="dismissRewardedAd();" value="No" />
-        </span>
-      </div>
+    <!-- /22802458718/start_chapter_reward/web_start_chapter_reward -->
+    <div
+      id="div-gpt-ad-1660639068844-0"
+      style="min-width: 320px; min-height: 480px"
+    >
+      <script>
+        googletag.cmd.push(function () {
+          googletag.display("div-gpt-ad-1660639068844-0");
+        });
+      </script>
     </div>
   </body>
 </html>
