@@ -3,7 +3,7 @@ title: useLayoutEffect에 대하여
 date: 2022-12-10 00:00
 modified: 2022-12-10 00:00
 tags: [uselayoutefect]
-description: 레이아웃에 영향을 주는 useLayoutEffect 훅에 대하여
+description: useLayoutEffect는 언제 사용할까
 image: "https://velog.velcdn.com/images/dmsqlswkd/post/0893d13b-662a-4096-807c-327770775f19/image.png"
 ---
 
