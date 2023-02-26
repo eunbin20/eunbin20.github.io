@@ -7,7 +7,7 @@ description: Test-Driven Development:By Example 책 리뷰 첫 번째 글. 나�
 image: "https://user-images.githubusercontent.com/43979066/221403936-2a4d9c90-9aa7-42ea-959f-899e9f0869ae.jpg"
 ---
 
-올해 1월부터 사내에서 "Test-Driven Development : By Example"책을 이용해 TDD에 대하여 알아보고 실제로 업무에 적용해보면서 우리 조직에 가장 적합한 형태의 Best Practice를 찾기 위한 스터디를 진행하고있다.
+올해 1월부터 사내에서 ⌜Test-Driven Development : By Example⌟책을 이용해 TDD에 대하여 알아보고 실제로 업무에 적용해보면서 우리 조직에 가장 적합한 형태의 Best Practice를 찾기 위한 스터디를 진행하고있다.
 
 ⌜Test-Driven Development : By Example⌟ 책은 본격적인 목차에 들어가기 전 저자의 글, 역자의 글, tdd 수련법 등 알찬 부록들로 시작한다. 이 중 저자의 글에서는 앞으로 이 책에서 다루게 될 TDD를 전반적으로 오버뷰해볼 수 있는 중요한 내용들이 들어가있어서 이 부분에 대한 정리로 이 책의 리뷰를 시작해보려한다. 그 전에, 이전까지의 나의 테스팅 경험을 간단히 소개해보겠다.
 
