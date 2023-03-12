@@ -15,8 +15,9 @@ image: "https://user-images.githubusercontent.com/43979066/224541048-7059c6cf-17
 > 그럼 본격적으로 DEVIEW 2023 후기를 시작하겠습니다!
 
 <br/>
-
-![](https://velog.velcdn.com/images/eunbin20_/post/5e735a5d-9e02-4f28-99a7-505f38a6ce0a/image.jpeg)
+<figure>
+  <img src="https://velog.velcdn.com/images/eunbin20_/post/5e735a5d-9e02-4f28-99a7-505f38a6ce0a/image.jpeg" alt="tooltip example using useEffect" width=500>
+</figure>
 
 ## **네이버** DEVIEW
 
@@ -68,7 +69,9 @@ CFCs Reactive는 함수형 컴포넌트를 지원하는 프레임워크들에 �
 - **아토믹패턴**
   아토믹 디자인 패턴에서 말하는 ‘아토믹’이란, 더 이상 분해되지 않는 수준이라는 의미를 가지고있는데요, 여기서 ‘더 이상 분해되지 않는 수준’은 다소 애매한 기준이라고 생각하셨다고 합니다. 그래서 mui와 같은 UI 라이브러리에서 제공하는 수준을 분자라고 정의하고 다음과 같이 클로바노트 웹서비스만의 디자인 패턴을 정립하셨다고 합니다.
 
-![](https://velog.velcdn.com/images/eunbin20_/post/04b7ac58-2707-49c1-b3a5-b6f3827704c7/image.png)
+<figure>
+  <img src="https://velog.velcdn.com/images/eunbin20_/post/04b7ac58-2707-49c1-b3a5-b6f3827704c7/image.png" alt="tooltip example using useEffect" width=500>
+</figure>
 
 프로젝트의 폴더 구조 개선이 필요할 때 참고하면 좋을만한 내용인 것 같습니다👍
 
@@ -117,8 +120,12 @@ CFCs Reactive는 함수형 컴포넌트를 지원하는 프레임워크들에 �
 
 이때 Field Resolver를 이용해 해당 조건들과 연산을 수행하는 위치를 서버로 옮기고, 클라이언트는 간단히 `isShowable` 과 같은 필드만 불러와 UI를 렌더링하도록 만들어줄 수 있습니다. 발표자분께서는 이를 **Server-Side Hoisting**이라는 개념으로 설명하셨습니다.
 
-![](https://velog.velcdn.com/images/eunbin20_/post/9b5b6151-a994-430f-a01d-fcc295308324/image.png)
-![](https://velog.velcdn.com/images/eunbin20_/post/e730c99e-b24d-4fb1-b13c-a16b0746b11b/image.png)
+<figure>
+  <img src="https://velog.velcdn.com/images/eunbin20_/post/9b5b6151-a994-430f-a01d-fcc295308324/image.png" alt="tooltip example using useEffect" width=500>
+</figure>
+<figure>
+  <img src="https://velog.velcdn.com/images/eunbin20_/post/e730c99e-b24d-4fb1-b13c-a16b0746b11b/image.png" alt="tooltip example using useEffect" width=500>
+</figure>
 
 **사용되지 않는 필드 제거하기**
 
@@ -142,6 +149,8 @@ Relay에 대해 들어보긴 했지만, 러닝커브가 높다는 소문을 듣�
 
 안그러면 바닥에 앉아서 들으셔야합니다 🥲 가까운 건 좋지만 다리가 조금 저리고 목이 아팠습니다 🤕
 
-![](https://velog.velcdn.com/images/eunbin20_/post/c5969ea1-4921-44c7-a938-970d273c26ec/image.jpeg)
+<figure>
+  <img src="https://velog.velcdn.com/images/eunbin20_/post/c5969ea1-4921-44c7-a938-970d273c26ec/image.jpeg" alt="tooltip example using useEffect" width=500>
+</figure>
 
 그럼 이만 DEVIEW 2023 후기를 마칩니다! 👋
