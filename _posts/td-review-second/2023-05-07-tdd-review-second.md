@@ -13,7 +13,7 @@ TDD는 이제까지 배웠던 개발 개념들 중 이론적으로 이해하기 
 
 # 실습 결과물
 
-https://github.com/eunbin20/tdd
+[https://github.com/eunbin20/tdd](https://github.com/eunbin20/tdd)
 
 # 배운점
 
