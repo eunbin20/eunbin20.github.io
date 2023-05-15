@@ -1,0 +1,25 @@
+name: "Deploy on Comment"
+
+# https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows
+on:
+  push:
+    branches:
+      - test-pull-request
+  pull_request:
+    branches:
+      - develop
+  issue_comment:
+    types: [created, edited]
+
+jobs:
+  test:
+    name: Test on Comment
+    # Only run if it#s a PR and the comment contains /deploy
+    if: contains(github.event.comment.body, '/test')
+    runs-on: act-stp-storyplay-server
+
+    steps:
+      # Do the actual deployment (exit randomly with 0 or 1)
+      - name: Test
+        run: |
+          echo "Running tests..."
