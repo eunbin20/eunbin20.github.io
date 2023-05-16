@@ -14,4 +14,4 @@ jobs:
       - name: Test
         run: |
           yarn test
-        working-directory: ./web
+        working-directory: /web
