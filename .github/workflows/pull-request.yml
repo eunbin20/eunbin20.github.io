@@ -14,6 +14,5 @@ jobs:
       - name: Test
         run: |
           yarn test
-        working-directory: ${{ github.workspace }}/web
       - name: Test Reporter with PR Comment
         uses: n-ryu/test-reporter@v0.0.2
