@@ -13,6 +13,6 @@ jobs:
     steps:
       - name: Test
         run: |
-          yarn test
+          npm run test
       - name: Test Reporter with PR Comment
         uses: n-ryu/test-reporter@v0.0.2
