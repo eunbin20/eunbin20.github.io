@@ -8,7 +8,7 @@ jobs:
   test:
     name: Test on Comment
     if: contains(github.event.comment.body, '/test-web')
-    runs-on: ubuntu
+    runs-on: ubuntu-latest
 
     steps:
       - name: Test
