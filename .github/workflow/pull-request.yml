@@ -1,0 +1,17 @@
+name: "Deploy on Comment"
+
+on:
+  issue_comment:
+    types: [created, edited]
+
+jobs:
+  test:
+    name: Test on Comment
+    if: contains(github.event.comment.body, '/test-web')
+    runs-on: ubuntu
+
+    steps:
+      - name: Test
+        run: |
+          cd web
+          yarn test
