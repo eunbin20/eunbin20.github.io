@@ -31,7 +31,7 @@ song에는 string타입을 명시적으로 선언해줬지만 rating에는 초�
 
 그러나 타입스크립트는 위와 같은 경우 매개변수의 초기값을 기반으로 타입을 유추한다.
 
-인상적이었던 부분은 rating의 타입 추론이 함수를 호춭하는 코드에서는 number 타입으로 유추되지만, 함수를 호출하는(사용하는) 코드에서는 선택적 `number '| undefined`로 유추된다는 점이다.
+인상적이었던 부분은 rating의 타입 추론이 함수를 호춭하는 코드에서는 number 타입으로 유추되지만, 함수를 호출하는(사용하는) 코드에서는 선택적 `number | undefined`로 유추된다는 점이다.
 
 <figure>
   <img src="https://github.com/ianlee92/learning-typescript-study/assets/43979066/0bd404d2-3ce5-45ed-9907-9f4dcc6b46ee" alt="thinking emoji" width=500>
