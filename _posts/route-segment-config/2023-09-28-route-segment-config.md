@@ -13,7 +13,7 @@ Nextjs 13 버전에서는 페이지, 레이아웃, 또는 Route 동작을 세밀
   <img src="https://github.com/eunbin20/til/assets/43979066/08e4df5a-2a47-4a93-a252-ea63168341df" alt="thinking emoji" width=500>
 </figure>
 
-dynamic 옵션은 'auto' | 'force-dynamic' | 'error' | 'force-static'로 총 4가지의 옵션이 있다.
+dynamic 옵션은 `auto`, `force-dynamic`, `error`, `force-static`로 총 4가지의 옵션이 있다.
 
 ### auto
 
@@ -61,7 +61,3 @@ export default function MyComponent() {}
 ```
 
 페이지를 완전히 정적으로 렌더링하고cookies(), headers() , useSearchParams() 값을 비워버린다.
-
-<br/>
-
-위 옵션들 중 상황에 맞게 page, layout, 또는 route 파일에서 사용하여 어플리케이션의 성능과 캐싱 동작을 세밀하게 조절할 수 있다.
