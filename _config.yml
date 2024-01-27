@@ -12,7 +12,7 @@ mode: light # default theme "dark" | "light"
 author:
   name: eunbin20 # author name
   bio: >- # tell to the world
-    몰입을 즐기고, 테스트에 관심이 많습니다. 책과 발레를 좋아합니다. <br/>
+    안녕하세요, 3년차 프론트엔드 개발자 김은빈입니다. <br/>
     #Typescript #React #GraphQL #Test #Books #Review
   username: eunbin # general username
   github: eunbin20 # github username
