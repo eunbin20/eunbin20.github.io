@@ -12,8 +12,8 @@ mode: light # default theme "dark" | "light"
 author:
   name: eunbin20 # author name
   bio: >- # tell to the world
-    Eunbin's Engineering Blog🚀 <br/>
-    #Typescript #React #GraphQL #Books #Review
+    발레하는 개발자 <br/>
+    #Typescript #React #GraphQL #Test #Books #Review
   username: eunbin # general username
   github: eunbin20 # github username
   email: eunbink98@email.com # email address
