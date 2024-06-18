@@ -9,6 +9,7 @@ image: "https://velog.velcdn.com/images/dmsqlswkd/post/0893d13b-662a-4096-807c-3
 
 > 비주얼 노벨 형태의 소설을 서비스하는 프로젝트를 진행하게되면서 작품 내에서 사용되는 이미지의 크기와 개수가 늘어났다. 현재 스플 웹에서는 next/image를 이용해 이미지를 로딩하고있기 때문에 이번 포스팅에서는 next/image를 잘~ 활용하여 이미지의 로딩 속도를 최소화하여 사용자의 경험을 개선하는 과정을 공유하려한다.
 
+<br/>
 
 # next/image
 
@@ -16,7 +17,9 @@ image: "https://velog.velcdn.com/images/dmsqlswkd/post/0893d13b-662a-4096-807c-3
 
 ## next/image 사용법
 
-1. 로컬 이미지
+<br/>
+
+**로컬 이미지**
 
 정적으로 임포트된 이미지에 대해서는 빌드타임에 임포트된 이미지 파일을 기준으로 width, height, blurDataURL정보가 자동으로 생성된다.
 
@@ -27,17 +30,18 @@ import Image from 'next/image';
 import localImage from '../public/localImage.png';
 
 const ImageComponent = () => {
-	return (
-			<Image
-				src={localImage}
-				alt="local"
-			/>
-	)
+  return (
+      <Image
+        src={localImage}
+        alt="local"
+      />
+  )
 }
 ```
 
+<br/>
 
-1. 외부 리소스에서 가져온 이미지
+**외부 리소스에서 가져온 이미지**
 
 외부에서 가져온 이미지를 사용하기 위해서는 next.config.js 파일에서 이미지의 도메인을 지정해주어야한다.
 
@@ -57,26 +61,27 @@ module.exports = {
 import Image from 'next/image';
 
 const ImageComponent = () => {
-	return (
-			<Image
-				src={'https://image/source/..../.png'}
+  return (
+      <Image
+        src={'https://image/source/..../.png'}
         width={400}
         height={200}
-				alt="remote"
-			/>
-	)
+        alt="remote"
+      />
+  )
 }
 ```
 
+<br/>
 
 ## 몇 가지 주요한 속성들
 
-- width 속성
+- **width**
   - 화면에 렌더링 할 이미지의 너비 또는 불러올 이미지의 너비를 픽셀 단위로 설정한다.
   - `layout="intrinsic"`또는 `layout="fixed"`속성을 사용하는 경우, width의 너비는 이미지가 화면에 표시되는 크기를 지정한다.
   - `layout="responsive"` 또는 `layout="fill"`속성의 경우, width의 너비는 이미지의 가로세로 비율에만 영향을 준다.
 
-- layout 속성
+- **layout**
   - 뷰포트의 크기가 변경될 때 이미지 레이아웃이 동작하는 방식을 설정한다.
   - `layout="intrinsic"(default)
     - 컨테이너에 맞게 크기가 줄어든다.
@@ -88,42 +93,46 @@ const ImageComponent = () => {
   - `layout="responsive"
     - 부모 요소에 따라 이미지의 너비가 결정되며, 이미지의 비율이 유지된다.
 
-- sizes 속성
+- **sizes**
   - 이미지의 사이즈를 화면의 뷰포트에 맞게 로딩하기 위한 속성이다.
   - next/image는 자동으로 source set을 생성하여 뷰포트에 알맞은 사이즈로 이미지를 로딩할 수 있는 기능을 제공한다.
   - 이 속성은 deviceSizes, imageSizes 속성과 결합하여 srcSet을 생성한다.
 
-- deviceSizes
+- **deviceSizes**
   - next.config.js에서 설정할 수 있는 속성이며 next/image 컴포넌트가 sizes 속성에 따라 사용자의 디바이스에 맞는 이미지 사이즈를 불러온다.
   - 아무런 설정도 하지 않은 경우 다음과 같이 설정된다.
-    ```jsx
+  
+```jsx
 module.exports = {
   images: {
     deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
   },
 }
-    ```
+```
 
-- imageSizes
+
+- **imageSizes**
   - 이 속성도 마찬가지로 next.config.js에서 설정할 수 있는 속성이며 deviceSize와 1:1로 매칭되어 image의 srcSet 리스트를 생성하는 데 사용된다.
   - 아무런 설정도 하지 않은 경우 다음과 같이 설정된다.
-    ```jsx
+  
+```jsx
 module.exports = {
   images: {
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
   },
 }
-    ```
+```
 
 
-**deviceSizes와 imageSizes 두 개의 리스트로 구분되어있는 이유**
+> **- deviceSizes와 imageSizes 두 개의 리스트로 구분되어있는 이유**<br/><br/>
+>
+> imageSizes는 sizes 속성을 가지고있는 이미지에만 사용되는데, 이것은 이미지의 크기가 화면 전체의 크기보다 작다는 것을 나타낸다. 즉, imageSizes의 모든 수치는 deviceSizes의 최소값보다 작은 수치여야한다.
 
-imageSizes는 sizes 속성을 가지고있는 이미지에만 사용되는데, 이것은 이미지의 크기가 화면 전체의 크기보다 작다는 것을 나타낸다. 즉, imageSizes의 모든 수치는 deviceSizes의 최소값보다 작은 수치여야한다.
+<br/>
 
+# next/image로 렌더링한 이미지를 최적화하는 방법
 
-# 이미지를 최적화하는 방법
-
-## **화면의 크기와 관계없이 사이즈가 고정되어있는 이미지**는 layout=”fixed”, width, height를 지정한다.
+##### **화면의 크기와 관계없이 사이즈가 고정되어있는 이미지**는 layout=”fixed”, width, height를 지정한다.
 
 기존에는 화면의 사이즈와 관계없이 동일한 사이즈의 이미지를 렌더링하는 로직이 아래와 같이 작성되어있었다.
 
@@ -147,7 +156,7 @@ return (
 위와 같은 방식으로 이미지를 로딩할 시, 크롬 개발자도구의 network탭에서 확인해보면 아래와 같이 3840 사이즈의 이미지를 불러오고있는 것을 볼 수 있다.
 
 <figure>
-  <img src="a.png" alt="before">
+  <img src="https://github.com/eunbin20/eunbin20.github.io/assets/43979066/e23d63ef-b7dc-4151-8c95-ed8818b569bb" alt="before">
 </figure>
 
 
@@ -164,41 +173,42 @@ return (
 ```
 
 <figure>
-  <img src="b.png" alt="before">
+  <img src="https://github.com/eunbin20/eunbin20.github.io/assets/43979066/0b91bd7a-242a-4308-a601-9ffacc75748a" alt="before">
 </figure>
 
 위와 같이 384px 사이즈의 이미지를 불러오고있는 것을 확인할 수 있다.
 
+<br/>
 
 이 두 방식의 차이를 테스트를 위해 작품에서 사용되는 모든 이미지(총 133개)를 불러오는 페이지를 만들었다.
 
 
-기존 방식대로 layout=”fill”로 적용했을 때
+기존 방식대로 layout=”fill”을 적용했을 때,
 
 ```jsx
  <div
-      key={character.name}
-      style={{
-        position: 'relative',
-        width: '200px',
-        height: '200px',
-      }}
-    >
-      <Image src={character.imageFile?.link || ''} layout="fill" alt="" />
-    </div>
+    key={character.name}
+    style={
+      position: 'relative',
+      width: '200px',
+      height: '200px',
+    }
+  >
+  <Image src={character.imageFile?.link || ''} layout="fill" alt="" />
+</div>
 ```
 
 모든 이미지를 불러오는 데 약 23초가 소요되었다 😱
+
+<figure>
+  <img src="https://github.com/eunbin20/eunbin20.github.io/assets/43979066/458801b3-8dd5-4af6-8768-83ac5d8bbbb0" alt="before" >
+</figure>
 
 **총 리소스 크기: 788kB**
 
 **총 소요 시간: 23.55s**
 
-<figure>
-  <img src="c.png" alt="before">
-</figure>
-
-layout=”fixed”, width와 height를 적용했을 때
+layout=”fixed”, width와 height를 적용했을 때,
 
 ```jsx
   <Image
@@ -214,17 +224,62 @@ layout=”fixed”, width와 height를 적용했을 때
 모든 이미지를 불러오는 데 약 16초가 소요되었다.
 
 <figure>
-  <img src="c.png" alt="before">
+  <img src="https://github.com/eunbin20/eunbin20.github.io/assets/43979066/d31c8cfc-1501-45da-abf8-b9399b98fa94" alt="before">
 </figure>
 
 **총 리소스 크기: 402kB**
 
 **총 소요 시간: 16.29s**
 
+##### 화면의 크기(부모의 크기)에 맞춰서 크기가 변동되어야하는 이미지는 layout=”fill”을 사용하되 디바이스별 불러올 이미지의 sizes를 명시한다.
 
-## webp보다 압축률이 좋은 avif를 사용한다.
 
-## 별로 중요하지 않은 이미지, 또는 작게 보여지는 이미지들의 quality를 조금씩 낮춘다.
+```tsx
+<SPImage
+  src={imageURL}
+  layout="fill"
+  objectFit="cover"
+  alt="Full chat image"
+  sizes="(max-width: 800px) 50vw, 33vw"
+/>
+```
+
+위와 같이 작성하면 800px 이하의 디바이스에서는 화면의 50vw의 이미지를, 그보다 작은 디바이스에서는 33vw의 사이즈의 이미지를 불러오게 되어 화면에 너비에 맞게 최적화된 이미지를 불러올 수 있게 된다.
+
+
+##### 불필요한 이미지 srcSet을 만들지 않도록 deviceSizes와 imageSizes를 수정한다.
+
+nextJS에서는 이미지 초기 요청 시 기본적으로 화면에 너비에 따라 적절한 이미지를 가져오도록 srcSet을 생성한다. 이때 불필요하게 많은 srcSet을 만들지 않도록 하기 위해 deviceSizes와 imageSizes값을 다음과 같이 수정하였다.
+
+
+```jsx
+// next.config.js
+
+const nextConfig = {
+  images: {
+    deviceSizes: [320, 640, 828, 1200, 1920],
+    imageSizes: [16, 48, 96, 128],
+  },
+  // ...
+}
+```
+
+
+##### webp보다 압축률이 좋은 avif를 사용한다.
+
+webp png나 jpeg 형식의 이미지보다 이미지 파일 용량이 작은 이미지 포맷이다. next/image를 사용하면 기본적으로 webp를 사용하게 되는데, webp가 나온 이후 avif라는 보다 압축률이 좋은 포맷이 개발되었다. 따라서 next.config.js 파일의 formats 속성에 avif를 추가하여 이미지를 최적화할 수 있다.
+
+```jsx
+// next.config.js
+
+const nextConfig = {
+  images: {
+    formats: ['image/avif', 'image/webp'],
+  },
+  // ...
+}
+```
+
 
 
 
