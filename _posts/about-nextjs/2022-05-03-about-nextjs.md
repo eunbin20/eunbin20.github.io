@@ -3,7 +3,7 @@ title: NextJS란? NextJS을 사용해야하는 이유
 date: 2022-05-02 11:58:47 +09:00
 modified: 2022-05-02 11:58:47 +09:00
 tags: [nextjs, ssr]
-description: NextJS짱짱맨!!!
+description: 서버사이드 렌더링부터 코드 스플리팅까지 Next.js의 주요 기능과 장점을 소개합니다아
 image: https://user-images.githubusercontent.com/43979066/166263265-83dec7cf-5cd8-4fc9-8224-e2c380f85c83.png
 ---
 

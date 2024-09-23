@@ -339,7 +339,6 @@
 
 .post-item {
   min-height: 135px;
-  width: 100%;
   border-bottom: 1px solid #eee;
   background-color: #fff;
   display: flex;
@@ -441,6 +440,7 @@
         margin-top: 10px;
 
         .date-wrapper {
+          flex-shrink: 0;
           display: flex;
           align-items: center;
 
@@ -490,6 +490,13 @@
           color: $gray;
           letter-spacing: 0.03rem;
           text-decoration: none;
+          word-break: break-all;
+          display: -webkit-box;
+          -webkit-line-clamp: 1;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: pre-wrap;
 
           &:hover {
             color: #ff5277;

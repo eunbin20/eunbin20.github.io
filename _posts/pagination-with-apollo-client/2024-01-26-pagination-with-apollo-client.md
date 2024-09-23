@@ -1,7 +1,7 @@
 ---
 title: ApolloClient로 페이지네이션 구현하기
-date: 2023-01-26 00:00
-modified: 2023-01-26 00:00
+date: 2024-01-26 00:00
+modified: 2024-01-26 00:00
 tags: [apollo_client, graphql, pagination]
 description: 아폴로 클라이언트에서 페이지네이션을위해 제공하는 API 알아보기
 image: https://user-images.githubusercontent.com/43979066/214864762-bf268ce1-f0b6-4051-b0c5-80092c05c30f.png
