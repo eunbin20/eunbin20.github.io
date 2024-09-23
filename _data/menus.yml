@@ -5,6 +5,14 @@
 - title: about
   url: /about/
   external: false
-# - title: github
-#   url: https://github.com/eunbin20/eunbin20.github.io
-#   external: true
+
+
+  - title: tags
+  url: /tags/
+  external: false
+
+- title: github
+  url: https://github.com/eunbin20
+  external: true
+
+

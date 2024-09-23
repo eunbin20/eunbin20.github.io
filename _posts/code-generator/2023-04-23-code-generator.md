@@ -2,7 +2,7 @@
 title: TypeScript GraphQL Code Generator 도입기
 date: 2023-04-22 00:00
 modified: 2023-04-22 00:00
-tags: [apollo-client, code-generator]
+tags: [apollo-client]
 description: 명령어 한 줄로 서버 타입을 정의해주는 Code Generator 도입기
 image: https://user-images.githubusercontent.com/116791055/233842013-486fe126-7185-4169-a6fe-a94cf943dc64.png
 ---
