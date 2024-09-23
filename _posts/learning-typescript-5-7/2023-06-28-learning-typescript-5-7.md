@@ -1,10 +1,10 @@
 ---
-title: 러닝 타입스크립트 책 리뷰 | 함수, 배열, 인터페이스
+title:📚 러닝 타입스크립트 책 리뷰 | 함수, 배열, 인터페이스
 date: 2023-07-02 00:00
 modified: 2023-07-02 00:00
 tags: [typescript]
 description: void vs undefined vs never
-image: "https://github.com/eunbin20/til/assets/43979066/439eea19-e0ee-49f3-9038-2044b5d95182"
+image: https://github.com/user-attachments/assets/d99827e2-c98d-4c6c-bf5d-0506b1aee9d6
 ---
 
 최근 러닝 타입스크립트 책을 이용해 타입스크립트 스터디를 진행하고있다.

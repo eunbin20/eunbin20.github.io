@@ -4,7 +4,7 @@ date: 2022-05-02 11:58:47 +09:00
 modified: 2022-05-02 11:58:47 +09:00
 tags: [nextjs, ssr]
 description: 서버사이드 렌더링부터 코드 스플리팅까지 Next.js의 주요 기능과 장점을 소개합니다아
-image: https://user-images.githubusercontent.com/43979066/166263265-83dec7cf-5cd8-4fc9-8224-e2c380f85c83.png
+image: https://github.com/user-attachments/assets/4dd13796-f763-4ef3-97cf-a428f751879b
 ---
 
 > Next.js는 SPA인 리액트의 강점을 살리면서 **SSR**를 쉽게 구현하도록 최적화되어있는 프레임워크이다.<br/>

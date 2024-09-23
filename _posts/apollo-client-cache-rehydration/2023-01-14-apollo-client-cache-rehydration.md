@@ -4,7 +4,7 @@ date: 2023-01-14 11:58:47 +09:00
 modified: 2023-01-14 11:58:47 +09:00
 tags: [nextjs, ssr]
 description: Next.js에서 ApolloClient의 캐시 Rehydration을 이용하여 SSR로 데이터를 불러오는 방법
-image: https://user-images.githubusercontent.com/43979066/212545849-3f63a12d-852a-44cc-a7ff-476d9852b9d9.png
+image: https://github.com/user-attachments/assets/b44aa5fe-36e0-45a9-a426-4e7a8b6a170d
 ---
 
 > 요즘 ApolloClient에서 캐시를 더 잘 활용할 수 있는 방법을 고민하고있다.<br/>

@@ -2,17 +2,10 @@
   url: /archive/
   external: false
 
-- title: about
-  url: /about/
-  external: false
-
-
-  - title: tags
+- title: tags
   url: /tags/
   external: false
 
-- title: github
-  url: https://github.com/eunbin20
-  external: true
-
-
+- title: about
+  url: /about/
+  external: false

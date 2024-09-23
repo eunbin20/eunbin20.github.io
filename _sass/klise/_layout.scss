@@ -372,6 +372,7 @@
       height: 100px;
       object-fit: fill;
       // margin-right: 40px;
+      object-fit: cover;
       margin-left: 40px;
 
       @include media-query($on-mobile) {

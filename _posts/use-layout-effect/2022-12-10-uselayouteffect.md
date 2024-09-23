@@ -4,7 +4,7 @@ date: 2022-12-10 00:00
 modified: 2022-12-10 00:00
 tags: [uselayoutefect]
 description: useLayoutEffect는 언제 사용할까
-image: "https://velog.velcdn.com/images/dmsqlswkd/post/0893d13b-662a-4096-807c-327770775f19/image.png"
+image: https://github.com/user-attachments/assets/45a04bb5-fe9b-4464-99b5-45519e0d81f1
 ---
 
 > 공식문서에 따르면, `useLayoutEffect`는 브라우저가 스크린을 repaint하기 전에 호출되는`useEffect` 의 다른 버전이다.

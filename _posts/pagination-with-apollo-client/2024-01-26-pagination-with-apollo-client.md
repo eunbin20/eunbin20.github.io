@@ -1,5 +1,5 @@
 ---
-title: ApolloClient로 페이지네이션 구현하기
+title: ApolloClient로 페이지네이션 구현하기 ♾
 date: 2024-01-26 00:00
 modified: 2024-01-26 00:00
 tags: [apollo_client, graphql, pagination]

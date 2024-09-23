@@ -4,7 +4,7 @@ date: 2023-09-26 00:00
 modified: 2023-09-26 00:00
 tags: [nextjs13]
 description: "Nextjs 13 버전에서는 페이지, 레이아웃, 또는 Route 동작을 세밀하게 제어할 수 있는 여러 옵션을 제공한다. 그 중 dynamic 설정에 대해 알아보자."
-image: https://github.com/eunbin20/til/assets/43979066/08e4df5a-2a47-4a93-a252-ea63168341df
+image: https://github.com/user-attachments/assets/4dd13796-f763-4ef3-97cf-a428f751879b
 ---
 
 Nextjs 13 버전에서는 페이지, 레이아웃, 또는 Route 동작을 세밀하게 제어할 수 있는 여러 옵션을 제공한다. 그 중 dynamic 설정에 대해 알아보자.
