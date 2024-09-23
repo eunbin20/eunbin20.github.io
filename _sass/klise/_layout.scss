@@ -374,6 +374,8 @@
       // margin-right: 40px;
       object-fit: cover;
       margin-left: 40px;
+      flex-shrink: 0;
+      border: 1px solid lightgray;
 
       @include media-query($on-mobile) {
         display: none;
