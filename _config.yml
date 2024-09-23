@@ -57,7 +57,7 @@ jekyll_compose:
     description:
 
 # Homepage limit posts
-number_of_posts: 5
+number_of_posts: 20
 
 # Build settings
 # theme: klise
