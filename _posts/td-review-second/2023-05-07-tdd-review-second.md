@@ -1,10 +1,10 @@
 ---
-title: Test-Driven Development:By Example 책 리뷰 | 1부. 화폐예제
+title: 📚 Test-Driven Development:By Example 책 리뷰 | 1부. 화폐예제
 date: 2023-05-07 00:00
 modified: 2023-05-07 00:00
 tags: [tdd]
 description: Test-Driven Development:By Example 책 리뷰 두 번째 글. 1부. 화폐예제 실습 후기
-image: "https://user-images.githubusercontent.com/43979066/236678311-f6013e1f-8c18-4db7-ba9c-70632df8c0f7.png"
+image: https://github.com/user-attachments/assets/e00de424-e23b-4d61-9873-2f95d71e7b6f
 ---
 
 TDD는 이제까지 배웠던 개발 개념들 중 이론적으로 이해하기 가장 어려운 개념이었다. 그러나 이 책의 1부에 나와있는 화폐 예제 코드를 더듬더듬 따라치며 저자의 의식의 흐름대로 작성한 것 같은 설명글을 같이 읽고나니 조금(아주 조금) TDD가 어떤 것인지 알 것 같았다.

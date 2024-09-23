@@ -4,7 +4,7 @@ date: 2023-02-25 00:00
 modified: 2023-02-25 00:00
 tags: [tdd]
 description: Test-Driven Development:By Example 책 리뷰 첫 번째 글. 나의 테스팅 경험과 TDD에 대하여
-image: "https://user-images.githubusercontent.com/43979066/221403936-2a4d9c90-9aa7-42ea-959f-899e9f0869ae.jpg"
+image: https://github.com/user-attachments/assets/e00de424-e23b-4d61-9873-2f95d71e7b6f
 ---
 
 올해 1월부터 사내에서 ⌜Test-Driven Development : By Example⌟책을 이용해 TDD에 대하여 알아보고 실제로 업무에 적용해보면서 우리 조직에 가장 적합한 형태의 Best Practice를 찾기 위한 스터디를 진행하고있다.

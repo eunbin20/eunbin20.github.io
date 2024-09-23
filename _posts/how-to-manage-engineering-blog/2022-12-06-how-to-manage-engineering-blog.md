@@ -1,9 +1,9 @@
 ---
-title: 기술 블로그 쉽게 쓰고 운영하는 방법
+title: 📚 개발자의 글쓰기 책 리뷰 | 기술 블로그 쉽게 쓰고 운영하는 방법
 date: 2022-12-06 00:00
 modified: 2022-12-06 00:00
 tags: [books, slump]
-description: 한동안 블로그 포스팅이 뜸했다. 원인을 찾아보고 해결하는 시간. (feat.⌜개발자의 글쓰기⌟)
+description: 한동안 블로그 포스팅이 뜸했다. 개발자의 기술 블로그에서 좋은 글을 쓰는 방법에 대해 배웠다.
 image: https://velog.velcdn.com/images/eunbin20/post/1813cf46-5354-4bdc-a12a-029a26265c05/image.jpeg
 ---
 

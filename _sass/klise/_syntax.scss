@@ -23,7 +23,6 @@ code {
 // Codeblock Theme
 pre.highlight,
 pre {
-  margin: 0 -20px;
   border-radius: 10px;
 
   @include media-query($on-mobile) {
