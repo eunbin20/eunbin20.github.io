@@ -1,38 +1,46 @@
 ---
 layout: compress
 ---
+
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: " en " }}">
-{% include header.html %}
+<html lang="{{ page.lang | default: site.lang | default: ' en ' }}">
+  {% include header.html %}
 
-<body data-theme="{{ site.mode }}" class="notransition">
+  <body data-theme="{{ site.mode }}" class="notransition">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-K6MSS5HN"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <script>
+      const body = document.body;
+      const data = body.getAttribute("data-theme");
 
-  <script>
-    const body = document.body;
-    const data = body.getAttribute("data-theme");
+      const initTheme = (state) => {
+        if (state === "dark") {
+          body.setAttribute("data-theme", "dark");
+        } else if (state === "light") {
+          body.removeAttribute("data-theme");
+        } else {
+          localStorage.setItem("theme", data);
+        }
+      };
 
-    const initTheme = (state) => {
-      if (state === "dark") {
-        body.setAttribute("data-theme", "dark");
-      } else if (state === "light") {
-        body.removeAttribute("data-theme");
-      } else {
-        localStorage.setItem("theme", data);
-      }
-    };
- 
-    initTheme("light");
-    
-    setTimeout(() => body.classList.remove("notransition"), 75);
-  </script>
+      initTheme("light");
 
-  {% include navbar.html %}
-  <div class="wrapper">
-    {% include author.html %}
-    <main aria-label="Content">
-      {{ content }}
-    </main>
-    {% include footer.html %}
-  </div>
-</body>
+      setTimeout(() => body.classList.remove("notransition"), 75);
+    </script>
+
+    {% include navbar.html %}
+    <div class="wrapper">
+      {% include author.html %}
+      <main aria-label="Content">{{ content }}</main>
+      {% include footer.html %}
+    </div>
+  </body>
 </html>

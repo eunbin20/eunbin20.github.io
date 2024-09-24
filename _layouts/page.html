@@ -3,41 +3,51 @@ layout: compress
 ---
 
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: " en " }}">
+<html lang="{{ page.lang | default: site.lang | default: ' en ' }}">
+  {% include header.html %}
 
-{% include header.html %}
+  <body data-theme="{{ site.mode }}" class="notransition">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-K6MSS5HN"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <script>
+      const body = document.body;
+      const data = body.getAttribute("data-theme");
 
-<body data-theme="{{ site.mode }}" class="notransition">
+      const initTheme = (state) => {
+        if (state === "dark") {
+          body.setAttribute("data-theme", "dark");
+        } else if (state === "light") {
+          body.removeAttribute("data-theme");
+        } else {
+          localStorage.setItem("theme", data);
+        }
+      };
 
-  <script>
-    const body = document.body;
-    const data = body.getAttribute("data-theme");
+      initTheme("light");
 
-    const initTheme = (state) => {
-      if (state === "dark") {
-        body.setAttribute("data-theme", "dark");
-      } else if (state === "light") {
-        body.removeAttribute("data-theme");
-      } else {
-        localStorage.setItem("theme", data);
-      }
-    };
- 
-    initTheme("light");
-    
-    setTimeout(() => body.classList.remove("notransition"), 75);
-  </script>
+      setTimeout(() => body.classList.remove("notransition"), 75);
+    </script>
 
-  {% include navbar.html %}
-  <div class="wrapper">
-    <header class="header">
-      <h1 class="header-title center" itemprop="headline">{{ page.title | escape }}.</h1>
-    </header>
-    <main class="page-content" aria-label="Content">
-      {% include anchor_headings.html html=content anchorClass="anchor-head" beforeHeading=true h_min=4 h_max=4 %}
-    </main>
-    {% include footer.html %}
-  </div>
-</body>
-
+    {% include navbar.html %}
+    <div class="wrapper">
+      <header class="header">
+        <h1 class="header-title center" itemprop="headline">
+          {{ page.title | escape }}.
+        </h1>
+      </header>
+      <main class="page-content" aria-label="Content">
+        {% include anchor_headings.html html=content anchorClass="anchor-head"
+        beforeHeading=true h_min=4 h_max=4 %}
+      </main>
+      {% include footer.html %}
+    </div>
+  </body>
 </html>
