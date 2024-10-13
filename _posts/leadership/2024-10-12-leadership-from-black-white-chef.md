@@ -7,9 +7,9 @@ description: 흑백요리사를 보며 좋은 리더와 좋은 팀원의 역할�
 image: https://velog.velcdn.com/images/eunbin20_/post/6f5bcfd3-eadd-4556-b114-6b9c79a8aae2/image.webp
 ---
 
-최근에 넷플릭스에서 흑백요리사라는 요리 프로그램을 재미있게 보고있다.
+최근에 넷플릭스에서 흑백요리사라는 요리 프로그램을 정말 재미있게 보고있다.
 
-![](https://velog.velcdn.com/images/eunbin20_/post/6f5bcfd3-eadd-4556-b114-6b9c79a8aae2/image.webp)
+<img scr="https://velog.velcdn.com/images/eunbin20_/post/6f5bcfd3-eadd-4556-b114-6b9c79a8aae2/image.webp" width="400"/>
 
 흑백요리사는 이미 실력과 명성이 입증된 셰프들을 ‘백수저’, 실력은 출중하지만 아직 덜 알려진 셰프들을 ‘흑수저’로 구분하여 요리 대결을 펼치는 요리 계급 서바이벌 프로그램이다.
 
@@ -43,15 +43,15 @@ image: https://velog.velcdn.com/images/eunbin20_/post/6f5bcfd3-eadd-4556-b114-6b
 
 이러한 팀장의 태도는 팀원들에게 신뢰감을 주며, 어려운 상황에서도 리더를 믿고 따를 수 있는 기반이 된다.
 
-#### 4. 리더로서 솔선수범하는 모습을 보였다.
-
-![](https://velog.velcdn.com/images/eunbin20_/post/227fed90-9984-4314-8bbd-b2b9ef3c1cda/image.png)
-![](https://velog.velcdn.com/images/eunbin20_/post/7fd06ded-053a-425a-971b-50e1071fb023/image.png)
-![](https://velog.velcdn.com/images/eunbin20_/post/e8bcb487-f472-4fad-a696-67ca2fb9651b/image.png)
+#### 3. 리더로서 솔선수범하는 모습을 보였다.
 
 물론 최현석 셰프의 팀에도 문제는 있었다. 대파의 양이 예상했던 양보다 적어 의도했던 결과물을 만들어내는 데 어려움이 있었던 것이다.
 
 대결 초반에 해산물 재료 중 모든 가리비를 싹쓸이 해온 탓에 상대팀의 감정이 좋지 않은 상태임에도 불구하고 최현석셰프는 상대 팀으로 찾아가 ‘남는 파를 받을 수 있겠냐’라고 물어본다.
+
+![](https://velog.velcdn.com/images/eunbin20_/post/227fed90-9984-4314-8bbd-b2b9ef3c1cda/image.png)
+![](https://velog.velcdn.com/images/eunbin20_/post/7fd06ded-053a-425a-971b-50e1071fb023/image.png)
+![](https://velog.velcdn.com/images/eunbin20_/post/e8bcb487-f472-4fad-a696-67ca2fb9651b/image.png)
 
 요리 경연을 하는 상황에서 이런 부탁이 도덕적으로 옳다 그르다를 떠나서, 그는 팀에 필요한 재료를 어떻게든 구해오겠다는 생각으로 나서서 행동했다. 거절당했을 때 자존심이 상할 수도, 물어보는 것 자체도 민망할 수 있는 상황이었지만, 그는 팀의 승리를 위해 수단과 방법을 가리지 않았다.
 
@@ -105,5 +105,3 @@ image: https://velog.velcdn.com/images/eunbin20_/post/6f5bcfd3-eadd-4556-b114-6b
 흑백요리사를 보며 리더와 팀원의 역할에 대해 다시금 깊이 생각하게 되었다.
 
 리더는 명확한 목표를 설정하고 팀원들에게 방향을 제시하는 것뿐만 아니라, 그 목표를 달성하기 위한 과정에서 발생하는 모든 결과에 책임을 지는 자세가 중요하다. 반면, 팀원은 그 목표를 단순히 따르기만 하는 것이 아니라, 그 과정에서 발생하는 문제에 대해 적극적으로 의견을 제시하고, 더 나은 해결책을 제안하는 협력적인 태도가 필요할 것 같다.
-
-나도 개발자로서 더 명확한 소통과 책임감을 갖춘 리더십을 발휘하고, 팀원으로서도 능동적으로 기여하는 방향으로 성장해야겠다는 다짐을 했다.
