@@ -9,7 +9,9 @@ image: https://velog.velcdn.com/images/eunbin20_/post/6f5bcfd3-eadd-4556-b114-6b
 
 최근에 넷플릭스에서 흑백요리사라는 요리 프로그램을 정말 재미있게 보고있다.
 
-<img scr="https://velog.velcdn.com/images/eunbin20_/post/6f5bcfd3-eadd-4556-b114-6b9c79a8aae2/image.webp" width="400"/>
+<figure>
+  <img src="https://velog.velcdn.com/images/eunbin20_/post/6f5bcfd3-eadd-4556-b114-6b9c79a8aae2/image.webp" alt="thinking emoji" width=400>
+</figure>
 
 흑백요리사는 이미 실력과 명성이 입증된 셰프들을 ‘백수저’, 실력은 출중하지만 아직 덜 알려진 셰프들을 ‘흑수저’로 구분하여 요리 대결을 펼치는 요리 계급 서바이벌 프로그램이다.
 
