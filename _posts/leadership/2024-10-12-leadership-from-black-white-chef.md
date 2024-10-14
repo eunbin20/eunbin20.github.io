@@ -32,6 +32,10 @@ image: https://velog.velcdn.com/images/eunbin20_/post/6f5bcfd3-eadd-4556-b114-6b
 ![](https://velog.velcdn.com/images/eunbin20_/post/e095a004-6073-4d91-b148-a1be4bd0a51f/image.png)
 ![](https://velog.velcdn.com/images/eunbin20_/post/37291595-653e-420a-9cfd-fb99fe44b7a9/image.png)
 
+- "셰프님이 가리비 싹쓸이해 오시고요"
+- "셰프님이 섭 70프로 갖고 오세요"
+- "두 셰프님은 광어 일곱 마리"
+
 와 같이 매우 간결하고 명확한 지시를 내린다. 이렇게 목표가 분명해지면 각 팀원은 자신이 맡은 영역에서 최상의 결과를 내기 위해 몰입할 수 있다.
 
 #### 2. 리더로서의 최현석 셰프는 책임을 지는 리더였다.
