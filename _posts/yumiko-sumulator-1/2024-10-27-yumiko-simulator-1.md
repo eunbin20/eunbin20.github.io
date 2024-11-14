@@ -3,7 +3,7 @@ title: 사이드 프로젝트 개발기 | Yumiko Simulator를 소개합니다
 date: 2024-10-27 00:00
 modified: 2024-10-27 00:00
 tags: [side_project]
-description: 원하는 대로 발레복 색상과 디자인을 바꿔볼 수 있는 디자인 시뮬레이터 Yumiko Simulator 소개글
+description: 원하는 대로 발레복 색상과 디자인을 바꿔볼 수 있는 디자인 시뮬레이터 Yumiko Simulator 사드 프로젝트 소개글
 image: https://github.com/user-attachments/assets/cc12d9d9-652c-4124-a527-84ff88cb62d1
 ---
 
