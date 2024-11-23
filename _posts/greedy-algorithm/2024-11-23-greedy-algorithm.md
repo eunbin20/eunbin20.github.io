@@ -3,7 +3,7 @@ title: 탐욕법(Greedy Algorithm)
 date: 2024-11-24 00:00
 modified: 2024-11-24 00:00
 tags: [algorithm, greedy]
-description: 탐욕법에 대해 알아보자!
+description: 
 image: https://github.com/user-attachments/assets/8f51c671-3ab9-4792-8e6f-dc3b24ecc8a7
 ---
 
