@@ -41,7 +41,7 @@ yarn add --dev @svgr/cli
 2. 스크립트 추가
 SVG 파일을 변환하는 명령어를 package.json의 스크립트에 추가합니다:
 
-```json
+```
 // package.json
 {
   "scripts": {
@@ -87,10 +87,11 @@ module.exports = {
 
 
 4. 커스텀 템플릿 작성
-template 옵션에서 지정한 템플릿 파일(src/utils/svgr.template)을 생성합니다. 
+template 옵션에서 지정한 템플릿 파일(src/utils/svgr.template.js)을 생성합니다. 
 
 
 ```jsx
+// svgr.template.js
 const template = ({ componentName, props, jsx }, { tpl }) => tpl`
 import React from 'react';
 
@@ -107,14 +108,21 @@ module.exports = template;
 이 템플릿은 SVG 컴포넌트를 표준화된 형태로 출력합니다.
 
 ## 변환 결과
+
+<img src="https://github.com/user-attachments/assets/51f649ca-4a41-42fd-943f-7cd12dee19e8" width={600} />
+
+
 위와 같은 과정을 통해 SVG 이미지 변환을 진행하게 되면, 다음과 같은 SVG파일이
+
 ```html
 <?xml version="1.0" encoding="utf-8"?>
 <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M7 12H17M8 8.5C8 8.5 9 9 10 9C11.5 9 12.5 8 14 8C15 8 16 8.5 16 8.5M8 15.5C8 15.5 9 16 10 16C11.5 16 12.5 15 14 15C15 15 16 15.5 16 15.5M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 ```
-다음과 같은 컴포넌트 파일로 변환됩니다.
+
+다음과 같은 컴포넌트 파일로 변환됩니다. ✨
+
 ```jsx 
 interface IconComponentType {
   className: string;
